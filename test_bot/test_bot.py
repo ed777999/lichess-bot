@@ -186,7 +186,7 @@ def run_bot(raw_config: dict[str, Any], logging_level: int) -> str:
     li = lichess_bot.lichess.Lichess(CONFIG.token, CONFIG.url, lichess_bot.__version__)
 
     user_profile = li.get_profile()
-    username = user_profile["username"]
+    username = user_profile["BotEdmon"]
     if user_profile.get("title") != "BOT":
         return "0"
     lichess_bot.logger.info(f"Welcome {username}!")
